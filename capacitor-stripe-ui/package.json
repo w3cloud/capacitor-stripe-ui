@@ -1,0 +1,50 @@
+{
+  "name": "capacitor-stripe-ui",
+  "version": "0.0.1",
+  "description": "Accept cards and Apple Pay / Google Pay with Strips native SDK's pre-built UI.",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Karthik Sankar",
+  "license": "GNU GPLv3",
+  "dependencies": {
+    "@capacitor/core": "latest"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0",
+    "typescript": "^3.2.4",
+    "@capacitor/ios": "latest",
+    "@capacitor/android": "latest"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "CapacitorStripeUi.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w3cloud/capacitor-stripe-ui"
+  },
+  "bugs": {
+    "url": "https://github.com/w3cloud/capacitor-stripe-ui/issues"
+  }
+}
